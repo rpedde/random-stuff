@@ -1,3 +1,8 @@
+random-stuff
+============
+
+This is crap code, but sharing is caring, so DON'T JUDGE.
+
 build-nova-images.sh
 --------------------
 
@@ -10,15 +15,15 @@ Ok.  So.  I had a PCB that had crap hanging off the side of the board.  When I g
 
 So, with a pcb that had and extra .071 added in the x direction, I can shift it over with something like:
 
-  ./movedrill.py -i drill.gc -o new-drill.gc -x -.071 -y 0
+    ./movedrill.py -i drill.gc -o new-drill.gc -x -.071 -y 0
 
 That's it.  Really.
 
 drill2ps.py
 -----------
 
-Given translating the gcode around, how can I see where the drills are going?  Again from the gcode (probably pcb2gcode only, makes bad assumptions, blah blah), it's not difficult to generate postscript output of the drill locations.  So that's what this does.
+Given translating the gcode around, how can I see where the drills are going?  Again from the gcode (probably pcb2gcode only, makes bad assumptions, blah blah), it's not difficult to generate postscript output of the drill locations.  So that's what this does.  Usage:
 
-  ./drill2ps.py new-drill.gc
+    ./drill2ps.py new-drill.gc
 
 Will drop a new-drill.ps that you can look at and print and line up with your PCB and make sure you are drilling crap in the right place.  0,0 is marked with a big cross for your lining-up benefit.
