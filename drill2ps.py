@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# turn a gcode drill file into a postscript file
+
 import getopt
 import os
 import re
